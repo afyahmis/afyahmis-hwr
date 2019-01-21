@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HibernateUtilTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-01-21T16:29:01" hostname="KOSKE-PC01" time="0.076">
+  <properties/>
+  <testcase name="getSessionFactory" classname="HibernateUtilTest" time="0.076"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[2019-01-21T19:29:01.177+0300  WARN  HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-01-21T19:29:01.203+0300  WARN  HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+]]></system-err>
+</testsuite>

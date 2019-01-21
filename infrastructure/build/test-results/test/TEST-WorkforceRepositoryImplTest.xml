@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WorkforceRepositoryImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-01-21T16:29:01" hostname="KOSKE-PC01" time="0.255">
+  <properties/>
+  <testcase name="getAll" classname="WorkforceRepositoryImplTest" time="0.064"/>
+  <testcase name="remove" classname="WorkforceRepositoryImplTest" time="0.069"/>
+  <testcase name="get" classname="WorkforceRepositoryImplTest" time="0.058"/>
+  <testcase name="createOrUpdate" classname="WorkforceRepositoryImplTest" time="0.063"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[2019-01-21T19:29:01.256+0300  WARN  HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-01-21T19:29:01.273+0300  WARN  HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-01-21T19:29:01.317+0300  WARN  HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-01-21T19:29:01.337+0300  WARN  HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-01-21T19:29:01.386+0300  WARN  HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-01-21T19:29:01.406+0300  WARN  HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-01-21T19:29:01.447+0300  WARN  HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-01-21T19:29:01.464+0300  WARN  HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+]]></system-err>
+</testsuite>

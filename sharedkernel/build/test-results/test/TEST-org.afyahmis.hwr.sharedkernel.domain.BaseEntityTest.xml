@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.afyahmis.hwr.sharedkernel.domain.BaseEntityTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-01-21T16:31:19" hostname="KOSKE-PC01" time="0.005">
+  <properties/>
+  <testcase name="should_have_assigned_id" classname="org.afyahmis.hwr.sharedkernel.domain.BaseEntityTest" time="0.004"/>
+  <testcase name="should_have_id_for_UUID" classname="org.afyahmis.hwr.sharedkernel.domain.BaseEntityTest" time="0.0"/>
+  <testcase name="should_check_equality" classname="org.afyahmis.hwr.sharedkernel.domain.BaseEntityTest" time="0.001"/>
+  <system-out><![CDATA[Mazda [fb1e00e6-1d99-11e9-9736-97f435657c39]
+Toyota [fb1e00e7-1d99-11e9-9736-ad583aabfd7c]
+CarA [fb1e00eb-1d99-11e9-9736-d772e74266d8]
+CarC [fb1e00eb-1d99-11e9-9736-d772e74266d8]
+CarB [8ff84d7a-fe8c-49af-944c-b7cd1ff96af7]
+CarD [8ff84d7a-fe8c-49af-944c-b7cd1ff96af7]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DesignationRepositoryImplTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-01-21T16:28:57" hostname="KOSKE-PC01" time="3.323">
+  <properties/>
+  <testcase name="getAll" classname="DesignationRepositoryImplTest" time="2.805"/>
+  <testcase name="remove" classname="DesignationRepositoryImplTest" time="0.262"/>
+  <testcase name="get" classname="DesignationRepositoryImplTest" time="0.125"/>
+  <testcase name="createOrUpdate" classname="DesignationRepositoryImplTest" time="0.131"/>
+  <system-out><![CDATA[Hibernate: create table BaseEntity (DTYPE varchar(31) not null, id varchar(255) not null, description varchar(255), code varchar(255), firstName varchar(255), lastName varchar(255), middleName varchar(255), designation_id varchar(255), primary key (id))
+Hibernate: alter table BaseEntity add constraint FK20hxd44ehphluwqgsh0a8m22g foreign key (designation_id) references BaseEntity
+Hibernate: insert into BaseEntity (description, DTYPE, id) values (?, 'Designation', ?)
+Hibernate: insert into BaseEntity (description, DTYPE, id) values (?, 'Designation', ?)
+Hibernate: select designatio0_.id as id2_0_, designatio0_.description as descript3_0_ from BaseEntity designatio0_ where designatio0_.DTYPE='Designation'
+Hibernate: insert into BaseEntity (description, DTYPE, id) values (?, 'Designation', ?)
+Hibernate: insert into BaseEntity (description, DTYPE, id) values (?, 'Designation', ?)
+Hibernate: select designatio0_.id as id2_0_0_, designatio0_.description as descript3_0_0_ from BaseEntity designatio0_ where designatio0_.id=? and designatio0_.DTYPE='Designation'
+Hibernate: select designatio_.id, designatio_.description as descript3_0_ from BaseEntity designatio_ where designatio_.id=?
+Hibernate: delete from BaseEntity where id=?
+Hibernate: select designatio0_.id as id2_0_0_, designatio0_.description as descript3_0_0_ from BaseEntity designatio0_ where designatio0_.id=? and designatio0_.DTYPE='Designation'
+Hibernate: insert into BaseEntity (description, DTYPE, id) values (?, 'Designation', ?)
+Hibernate: insert into BaseEntity (description, DTYPE, id) values (?, 'Designation', ?)
+Hibernate: select designatio0_.id as id2_0_0_, designatio0_.description as descript3_0_0_ from BaseEntity designatio0_ where designatio0_.id=? and designatio0_.DTYPE='Designation'
+Wilkinson-Wilkinson musician
+Hibernate: insert into BaseEntity (description, DTYPE, id) values (?, 'Designation', ?)
+Hibernate: insert into BaseEntity (description, DTYPE, id) values (?, 'Designation', ?)
+Hibernate: insert into BaseEntity (description, DTYPE, id) values (?, 'Designation', ?)
+Hibernate: select designatio0_.id as id2_0_0_, designatio0_.description as descript3_0_0_ from BaseEntity designatio0_ where designatio0_.id=? and designatio0_.DTYPE='Designation'
+Doc Doctor
+]]></system-out>
+  <system-err><![CDATA[Jan 21, 2019 7:28:57 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.4.1.Final}
+Jan 21, 2019 7:28:58 PM org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver resolveEntity
+WARN: HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+Jan 21, 2019 7:28:58 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+Jan 21, 2019 7:28:58 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+Jan 21, 2019 7:28:58 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001005: using driver [org.hsqldb.jdbcDriver] at URL [jdbc:hsqldb:mem:testdb]
+Jan 21, 2019 7:28:58 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001001: Connection properties: {user=sa, password=****}
+Jan 21, 2019 7:28:58 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+INFO: HHH10001003: Autocommit mode: false
+Jan 21, 2019 7:28:58 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
+INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
+Jan 21, 2019 7:28:58 PM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2019-01-21T19:29:00.657+0300  WARN  HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-01-21T19:29:00.688+0300  WARN  HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-01-21T19:29:00.915+0300  WARN  HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-01-21T19:29:00.937+0300  WARN  HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-01-21T19:29:01.045+0300  WARN  HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2019-01-21T19:29:01.067+0300  WARN  HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+]]></system-err>
+</testsuite>
