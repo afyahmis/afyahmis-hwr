@@ -1,3 +1,5 @@
+package org.afyahmis.hwr.infrastructure.data;
+
 import org.afyahmis.hwr.domain.Designation;
 import org.afyahmis.hwr.domain.Workforce;
 import org.hibernate.SessionFactory;

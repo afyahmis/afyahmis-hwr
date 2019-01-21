@@ -1,3 +1,5 @@
+package org.afyahmis.hwr.infrastructure.data;
+
 import org.afyahmis.hwr.domain.Designation;
 import org.afyahmis.hwr.domain.Workforce;
 import org.afyahmis.hwr.interfaces.DesignationRepository;
@@ -18,7 +20,7 @@ public class DesignationRepositoryImpl implements DesignationRepository {
     }
 
     @Override
-    public void CreateOrUpdate(Designation entity) {
+    public void createOrUpdate(Designation entity) {
         Session session= this.sessionFactory.openSession();
         session.beginTransaction();
         session.save(entity);
@@ -46,7 +48,7 @@ public class DesignationRepositoryImpl implements DesignationRepository {
     }
 
     @Override
-    public void Remove(String id) {
+    public void remove(String id) {
         Session session= this.sessionFactory.openSession();
         session.beginTransaction();
         Designation designation=get(id);

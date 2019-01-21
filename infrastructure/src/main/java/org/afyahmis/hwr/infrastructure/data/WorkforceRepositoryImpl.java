@@ -1,3 +1,5 @@
+package org.afyahmis.hwr.infrastructure.data;
+
 import org.afyahmis.hwr.domain.Workforce;
 import org.afyahmis.hwr.interfaces.WorkforceRepository;
 import org.hibernate.Session;
@@ -16,7 +18,7 @@ public class WorkforceRepositoryImpl implements WorkforceRepository {
     }
 
     @Override
-    public void CreateOrUpdate(Workforce entity) {
+    public void createOrUpdate(Workforce entity) {
         Session session= this.sessionFactory.openSession();
         session.beginTransaction();
         session.save(entity);
@@ -44,7 +46,7 @@ public class WorkforceRepositoryImpl implements WorkforceRepository {
     }
 
     @Override
-    public void Remove(UUID id) {
+    public void remove(UUID id) {
         Session session= this.sessionFactory.openSession();
         session.beginTransaction();
         Workforce workforce=get(id);

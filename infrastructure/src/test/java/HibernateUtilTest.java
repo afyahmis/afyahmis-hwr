@@ -1,11 +1,8 @@
+import org.afyahmis.hwr.infrastructure.data.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.junit.After;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class HibernateUtilTest {
 

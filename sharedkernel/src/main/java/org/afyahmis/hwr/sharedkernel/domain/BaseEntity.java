@@ -3,6 +3,7 @@ import org.afyahmis.hwr.sharedkernel.utils.LiveGuid;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.lang.reflect.ParameterizedType;
 import java.util.Objects;
 import java.util.UUID;

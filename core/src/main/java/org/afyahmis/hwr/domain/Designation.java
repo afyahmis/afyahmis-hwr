@@ -2,12 +2,11 @@ package org.afyahmis.hwr.domain;
 
 import org.afyahmis.hwr.sharedkernel.domain.AggregateRoot;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import javax.swing.text.Style;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -16,14 +15,14 @@ public class Designation extends AggregateRoot<String> {
     @Column
     private String description;
 
-    @OneToMany(mappedBy = "designation")
-    private Set<Workforce> personnel = new HashSet<>();
+    @OneToMany(mappedBy = "designation", fetch = FetchType.LAZY)
+    private List<Workforce> personnel = new ArrayList<>();
 
     public String getDescription() {
         return description;
     }
 
-    public Set<Workforce> getPersonnel() {
+    public List<Workforce> getPersonnel() {
         return personnel;
     }
 
@@ -42,9 +41,6 @@ public class Designation extends AggregateRoot<String> {
 
     @Override
     public String toString() {
-        return "Designation{" +
-                "description='" + description + '\'' +
-                ", personnel=" + personnel +
-                '}';
+        return id + " " + description;
     }
 }
