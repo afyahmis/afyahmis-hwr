@@ -1,0 +1,5 @@
+rootProject.name = 'afyahmis-hwr'
+include 'core'
+include 'sharedkernel'
+include 'infrastructure'
+
